@@ -183,7 +183,7 @@ export default function Home({ targetSection }: HomeProps) {
                   <Button 
                     className="gap-2 bg-[#F3BA2F] hover:bg-[#F3BA2F]/90 text-black font-bold"
                     onClick={() => {
-                      window.open("https://four.meme/", "_blank");
+                      window.open("https://four.meme/token/0x3e8f5f27d909a9b9be072bd4e5868c883c254444?code=C8UE2M5HJFHN", "_blank");
                     }}
                   >
                     前往 four.meme 抢购

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 // import heroImg from "@/assets/hero_cyber_horse.jpeg";
-import tokenLogo from "@/assets/token_logo.jpeg";
+import tokenLogo from "@/assets/token_logo.png";
 import { Copy, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -188,20 +188,32 @@ export default function Home({ targetSection }: HomeProps) {
                   >
                     前往 four.meme 抢购
                   </Button>
-                  <Button 
+                  {/* <Button 
                     variant="outline"
                     className="gap-2"
                     onClick={() => {
-                      navigator.clipboard.writeText("$马上统一");
-                      toast.success("Copied $马上统一!");
+                      const tokenAddress = "0x1234567890123456789012345678901234567890";
+                      navigator.clipboard.writeText(tokenAddress);
+                      toast.success("代币地址已复制!");
                     }}
                   >
-                    复制代币符号 $马上统一
-                  </Button>
+                    复制代币地址
+                  </Button> */}
                 </div>
-                <p className="text-xs text-muted-foreground">
-                  *请在平台搜索 "马上统一" 或 "$马上统一"
-                </p>
+                {/* <div 
+                  className="flex items-center gap-2 px-3 py-2 bg-muted/50 rounded-lg cursor-pointer hover:bg-muted transition-colors group"
+                  onClick={() => {
+                    const tokenAddress = "0x1234567890123456789012345678901234567890";
+                    navigator.clipboard.writeText(tokenAddress);
+                    toast.success("代币地址已复制!");
+                  }}
+                >
+                  <span className="text-sm font-bold whitespace-nowrap" style={{ color: '#F3BA2F' }}>CA:</span>
+                  <span className="text-xs font-mono text-foreground/80 group-hover:text-foreground transition-colors truncate flex-1 min-w-0">
+                    0x1234567890123456789012345678901234567890
+                  </span>
+                  <Copy className="w-3.5 h-3.5 text-muted-foreground flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </div> */}
               </div>
             </div>
           </div>
